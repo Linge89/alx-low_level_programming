@@ -14,10 +14,16 @@ int main(void)
 	{
 		for (m = 0 ; m < 10 ; ++m)
 		{
-			putchar(i + '0');
-			putchar(m + '0');
-			putchar(',');
-			putchar(' ');
+			if (i < m && i != m)
+			{
+				putchar(i + '0');
+				putchar(m + '0');
+				if (i + m != 17
+				}
+					putchar(',');
+					putchar(' ');
+				}
+			}
 		}
 	}
 	putchar('\n');
