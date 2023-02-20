@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * main - numbers of base 
+ * main - numbers of base
  *
  * Return: 0
  */
