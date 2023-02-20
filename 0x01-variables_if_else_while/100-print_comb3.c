@@ -5,6 +5,7 @@
  *
  * Return: 0
  */
+
 int main(void)
 {
 	int i;
@@ -18,8 +19,8 @@ int main(void)
 			{
 				putchar(i + '0');
 				putchar(m + '0');
-				if (i + m != 17
-				}
+				if (i + m != 17)
+				{
 					putchar(',');
 					putchar(' ');
 				}
