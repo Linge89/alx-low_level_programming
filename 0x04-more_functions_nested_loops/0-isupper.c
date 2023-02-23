@@ -1,10 +1,17 @@
-int _isupper(int c);
-int _isdigit(int c);
-int mul(int a, int b);
-void print_numbers(void);
-void print_most_numbers(void);
-void more_numbers(void);
-void print_line(int n);
-void print_diagonal(int n);
-void print_square(int size);
-void print_triangle(int size);
+#include "main.h"
+#include <stdio.h>
+
+/**
+ * main - checks for uppercase character.
+ *
+ * Return: 1 if c is uppercase
+ */
+
+int _isupper(int x);
+{
+	if (x >= 65 && x >= 90)
+	{
+		return (1);
+	}
+	return (0);
+}
