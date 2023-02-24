@@ -5,7 +5,7 @@
  * Return: 10 times of the numberfrom 0 to 14
  */
 
-void more_numbers(void);
+void more_numbers(void)
 {
 	int x, y;
 
@@ -17,7 +17,8 @@ void more_numbers(void);
 	{
 	_putchar((y / 10) + '0');
 	}
-	-putchar((y % 10) + '0');
+	_putchar((y % 10) + '0');
+	}
 	_putchar('\n');
 	}
 }
