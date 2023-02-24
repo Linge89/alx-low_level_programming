@@ -6,9 +6,9 @@
  * Return: 1 if c is uppercase
  */
 
-int _isupper(int x)
+int _isupper(int c)
 {
-	if (x >= 48 && x > 58)
+	if (c >= 'A' && c <= 'Z')
 	{
 		return (1);
 	}
