@@ -8,28 +8,29 @@
 
 int _atoi(char *s)
 {
-	int c = 0;
-	unsigned int ni = 0;
-	int min = 1;
-	int isi = 0;
+	unsigned int count = 0, size = 0, oi = 0, pn = 1, m = 1, i;
 
-	while (s[c])
+	while (*(s + count) != '\0')
 	{
-	if (s[c] == 45)
-	min *= -1;
+		if (size > 0 && (*(s + count) < '0' || *(s + count) > '9'))
+			break;
+
+		if (*(s + count) == '-')
+			pn *= -1;
+
+		if ((*(s + count) >= '0') && (*(s + count) <= '9'))
+		{
+			if (size > 0)
+				m *= 10;
+			size++;
+		}
+		count++;
 	}
-	while (s[c] >= 48 && s[c] <= 57)
+
+	for (i = count - size; i < count; i++)
 	{
-	isi = 1;
-	ni = (ni * 10) + (s[c] - '0');
-	c++;
+		oi = oi + ((*(s + i) - 48) * m);
+		m /= 10;
 	}
-	if (isi == 1)
-	{
-	break;
-	}
-	c++;
-	}
-	ni *= min ;
-	return (ni);
+	return (oi * pn);
 }
