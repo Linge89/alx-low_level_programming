@@ -7,15 +7,9 @@
  * Return: 0
  */
 
-int main(int argc, char *argv[])
+int main(int argc __attribute__((unused)), char *argv[])
 {
-	int i;
+	printf("%s\n", *argv);
 
-	printf("argc = %d\n", argc);
-
-	for (i = 0; i < argc; i++)
-	{
-		printf("argv[%d] = %s\n", i, argv[i]);
-	}
 	return (0);
 }
