@@ -1,5 +1,5 @@
-#ifndef "3-function_like_macro.h"
-#define "3-function_like_macro.h"
+#ifndef FUNCTION_LIKE_MACRO
+#define FUNCTION_LIKE_MACRO
 #include <stdio.h>
 #include <stdlib>
 #define ABS(x)
