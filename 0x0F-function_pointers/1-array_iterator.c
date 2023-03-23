@@ -1,5 +1,5 @@
+#include <stdlib.h>
 #ifndef FUNCTION_POINTERS_H
-#include <stdio.h>
 
 /**
  * array_iterator - function that executes a function
@@ -12,13 +12,15 @@
 
 void array_iterator(int *array, size_t size, void (*action)(int))
 {
-	unsigned int i;
+	size_t i = 0;
+	void (*p)(int);
+	p = action;
 
-	if (array == NULL || action == NULL)
+	if (!array || !action)
 		return;
 	for (i = 0; size < i; i++)
 	{
-		action(array[i]);
+		p(array[i]);
 	}
 }
 #endif
