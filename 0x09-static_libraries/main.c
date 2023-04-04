@@ -3,6 +3,11 @@
 #include <stdlib.h>
 #include <ctype.h>
 #include <string.h>
+/**
+ * _puts - main
+ *
+ * Return: 0
+ */
 
 int main(void)
 {
